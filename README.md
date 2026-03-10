@@ -116,3 +116,19 @@ git push -u origin main
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
+
+## My Technical Modification
+
+I created a new Python file named `pipeline_abdelhafidh.py` by copying the instructor example `pipeline_case.py`.
+
+In my version, I added additional logging to improve observability. I added logging for the `ARTIFACTS_DIR` folder and included checks to confirm whether the `docs` and `artifacts` directories exist.
+
+### What I observed
+
+After running the modified file, the terminal displayed the additional log messages I added. The output now shows the path for the `artifacts` folder and confirms whether the `docs` and `artifacts` folders exist.
+
+## Run the Project
+
+```shell
+uv run python -m cintel.pipeline_case
+uv run python -m cintel.pipeline_abdelhafidh
